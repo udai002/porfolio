@@ -11,7 +11,7 @@ const Navbar = () =>{
     }
 
      
-        return <div className="md:p-6 p-4">
+        return <div className="md:p-4 p-4">
             {openNav?<div className='w-full h-[100vh] bg-[black]/35 fixed top-0 left-0' onClick={()=>setOpenNav(false)}></div>:''}
     <div className="flex flex-row justify-between items-center">
         <div className='md:hidden p-4' onClick={onClickOpenNav}>
