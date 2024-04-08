@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='min-h-[100vh] bg-default  z-30 p-4 '>
+    <div className='min-h-[100vh] bg-default  z-30  '>
       <BrowserRouter>
       <Navbar />
       <Routes>

@@ -8,7 +8,7 @@ const AnimatedText = (props) => {
     
    return (
     <div>
-      <ReactTyped strings={[text]} typeSpeed={40} backSpeed={50}  className={`${className}`}   />
+      <ReactTyped strings={[text]} typeSpeed={30} backSpeed={50}  className={`${className}`}   />
     </div>
   )
 }
