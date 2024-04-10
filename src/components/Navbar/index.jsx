@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {motion} from 'framer-motion'
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Navbar = () =>{
     
@@ -22,18 +23,18 @@ const Navbar = () =>{
         <img src="logo.png" alt="Logo" />
         <div className="md:block hidden">
             <ul className="flex font-semibold text-lg mt-3">
-                <li className="mr-6 ">Home</li>
-                <li className="mr-6">Projects</li>
+                <li className="mr-6 "><Link to={'/'}>Home</Link></li>
+                <li className="mr-6"><Link to={'/projects'}>Projects</Link></li>
                 <li className="mr-6">About</li>
                 <li className="mr-6">Contact Me</li>
             </ul>
         </div>
         {openNav?<motion.div initial={{x:-300}} animate={{x:0}} transition={{bounce:0}} className="top-0 w-[200px] h-[100vh] fixed bg-default flex flex-col justify-center left-0 md:hidden ">
         <ul className="flex flex-col font-semibold text-lg mt-3 text-center">
-                <li className="mb-6 ">Home</li>
-                <li className="mb-6">Projects</li>
-                <li className="mb-6">About</li>
-                <li className="mb-6">Contact Me</li>
+                <li className="mb-6 "onClick={()=>setOpenNav(false)}><Link to={'/'}>Home</Link></li>
+                <li className="mb-6" onClick={()=>setOpenNav(false)}><Link to={'/projects'}>Projects</Link></li>
+                <li className="mb-6" onClick={()=>setOpenNav(false)}>About</li>
+                <li className="mb-6" onClick={()=>setOpenNav(false)}>Contact Me</li>
             </ul>
         </motion.div>:''}
         <button className="px-3 py-2 bg-color1 text-[#ffffff] rounded">Hire Me</button>

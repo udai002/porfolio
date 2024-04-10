@@ -1,7 +1,7 @@
 import ProgressBar from "../Features/ProgressBar"
 
 const Skills = ()=>{
-    return <div className="p-4 ">
+    return <div className="p-4 mb-10 ">
         <h1 className="font-bold text-center text-3xl ">Skills</h1>
         <ProgressBar skill='ReactJs' percent={80} />
         <ProgressBar skill='NodeJs' percent={60} />

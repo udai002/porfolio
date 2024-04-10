@@ -3,7 +3,7 @@ import { FaDotCircle } from "react-icons/fa";
 const Education = ()=>{
     return <div className="">
     <h1 className="text-center text-3xl font-bold mt-10 mb-6">Education</h1>
-    <div className="timeline after:w-[6px] after:bg-dark after:absolute after:content-[''] md:after:h-[60%] after:h-[80%] after:left-1/2" id="timeline">
+    <div className="timeline after:w-[6px] after:bg-dark after:absolute after:content-[''] md:after:h-[60%] after:h-[90%] after:left-1/2" id="timeline">
     </div>
     <div className="w-1/2 left-0 relative p-4 flex justify-end  ">
         <div className=" relative  p-4 w-fit bg-[white] ">
